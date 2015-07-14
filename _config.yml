@@ -1,0 +1,15 @@
+#SITE SETTINGS
+
+title: Washington Ferreira
+email: thewazig@hotmail.com
+description: "Web design // Web Developer"
+
+#BUILD SETTINGS
+markdown: kramdown
+permalink: pretty
+siteurl: localhost
+
+sass:
+	sass_dir: assets/css
+	style: compressed
+

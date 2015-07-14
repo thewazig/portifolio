@@ -1,0 +1,35 @@
+footer
+	background: url(../img/header_bg.jpg) center top
+	background-size: cover
+
+	.locup
+		padding: 50px 30px
+		clear: both
+		display: table
+
+		.logo
+			width: 50px
+			height: 50px
+			float: left
+			margin-right: 30px
+
+			path
+				fill: rgba(0,0,0,0.9)
+
+		.footer-content-wrapper
+			float: left
+
+			.copyright
+				text-transform: uppercase
+				@extend %small-bold
+				color: rgba(0,0,0,0.5)
+
+			a
+				@extend %small-bold
+				color: rgba(0,0,0,0.7)
+				text-decoration: none
+				display: inline-block
+				margin-right: 30px
+
+				&:hover
+					color: rgba(0,0,0,1)

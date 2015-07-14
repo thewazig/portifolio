@@ -1,0 +1,92 @@
+header nav a, header .kicker, footer .locup .footer-content-wrapper .copyright, footer .locup .footer-content-wrapper a, h3 { font-size: 14px; font-weight: 700; font-text-transform: uppercase; }
+
+header { height: 450px; background: url(../img/header_bg.jpg) center center; background-size: cover; }
+
+header .logo { float: left; margin: 30px 0 0 30px; height: 50px; width: 50px; }
+
+header .logo path { fill: rgba(0, 0, 0, 0.9); }
+
+header nav { float: right; margin: 30px 30px 0 0; }
+
+header nav a { text-decoration: none; display: inline-block; margin-left: 30px; color: rgba(0, 0, 0, 0.5); }
+
+header nav a:hover { color: black; }
+
+header h1 { text-align: center; font-size: 52px; font-weight: 700; font-text-transform: uppercase; color: white; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; padding-top: 100px; text-shadow: 2px 2px 20px black; clear: both; }
+
+header h1 span { display: inline-block; }
+
+header .kicker { text-align: center; text-transform: uppercase; letter-spacing: 0.5em; color: white; line-height: 1; text-shadow: 2px 2px 20px black; }
+
+footer { background: url(../img/header_bg.jpg) center top; background-size: cover; }
+
+footer .locup { padding: 50px 30px; clear: both; display: table; }
+
+footer .locup .logo { width: 50px; height: 50px; float: left; margin-right: 30px; }
+
+footer .locup .logo path { fill: rgba(0, 0, 0, 0.9); }
+
+footer .locup .footer-content-wrapper { float: left; }
+
+footer .locup .footer-content-wrapper .copyright { text-transform: uppercase; color: rgba(0, 0, 0, 0.5); }
+
+footer .locup .footer-content-wrapper a { color: rgba(0, 0, 0, 0.7); text-decoration: none; display: inline-block; margin-right: 30px; }
+
+footer .locup .footer-content-wrapper a:hover { color: black; }
+
+h3 { color: #e1c184; text-align: center; padding: 50px 0 50px; }
+
+.face-lockup { max-width: 700px; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; text-align: center; margin: 0 auto; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: distribute; -moz-box-pack: distribute; box-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute; }
+
+.face-lockup .face-img { height: 200px; width: 200px; border-radius: 50%; background: lightgrey; order: 3; }
+
+.face-lockup [class^="icon-"] { height: 100px; width: 100px; border-radius: 50%; background: lightgrey; }
+
+.face-lockup [class^="icon-"].icon-pencil { order: 1; }
+
+.face-lockup [class^="icon-"].icon-mouse { order: 2; }
+
+.face-lockup [class^="icon-"].icon-browser { order: 4; }
+
+.face-lockup [class^="icon-"].icon-video { order: 5; }
+
+@media screen and (max-width: 650px) { .face-lockup { display: block; text-align: center; }
+  .face-lockup div { display: inline-block; }
+  .face-lockup .face-img { display: block; background-position: center center; background-repeat: no-repeat; width: auto; margin-bottom: 30px; }
+  .face-lockup [class^="icon-"] { margin: 10px; } }
+
+.blurb { max-width: 620px; padding: 0 15px; margin: 50px auto; font-size: 18px; font-weight: 300; text-align: justify; }
+
+.skill-lockup { text-align: center; max-width: 540px; margin: 30px auto; color: #999; }
+
+.skill-lockup::after { clear: both; content: ""; display: table; }
+
+.skill-lockup .skill-unit { width: 270px; float: left; }
+
+.skill-lockup .skill-icons { margin: 2px 0 30px; }
+
+.skill-lockup .skill-icons span { display: inline-block; height: 14px; width: 14px; background-color: #c99065; margin-right: 5px; border-radius: 50%; }
+
+.skill-lockup .skill-icons span:after { content: ""; display: block; height: 10px; width: 10px; background: white; border-radius: 50%; margin: 2px; }
+
+.skill-lockup .skill-icons.skill-1 span:nth-child(n+2) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-2 span:nth-child(n+3) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-3 span:nth-child(n+4) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-4 span:nth-child(n+5) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-5 span:nth-child(n+6) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-6 span:nth-child(n+7) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-7 span:nth-child(n+8) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-8 span:nth-child(n+9) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-9 span:nth-child(n+10) { background: darkgrey; }
+
+.skill-lockup .skill-icons.skill-10 span:nth-child(n+11) { background: darkgrey; }
+
+@media screen and (max-width: 650px) { .skill-lockup { width: 270px; } }
