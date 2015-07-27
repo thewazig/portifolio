@@ -1,0 +1,22 @@
+html(lang="pt-br")
+	head
+		title My Portifolio
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=01")
+		link(rel="stylesheet" href="assets/css/main.css")
+		link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Bitter:400,700|Vollkorn:400,400italic,700,700italic|Libre+Baskerville:400,700' rel='stylesheet' type='text/css')
+	
+	body
+		header
+			include assets/jade/header
+		section
+			.about
+				include assets/jade/about
+			include assets/jade/projects
+			include assets/jade/clients
+			include assets/jade/contact
+		footer
+			include assets/jade/footer
+
+		script(src="/assets/js/jquery-2.1.4.min.js")
+		script(src="/assets/js/functions.js" type="text/javascript")

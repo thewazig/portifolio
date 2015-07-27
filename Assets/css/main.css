@@ -1,92 +1,367 @@
-header nav a, header .kicker, footer .locup .footer-content-wrapper .copyright, footer .locup .footer-content-wrapper a, h3 { font-size: 14px; font-weight: 700; font-text-transform: uppercase; }
+header h1 { font-size: 3em; font-weight: 700; font-text-transform: uppercase; }
 
-header { height: 450px; background: url(../img/header_bg.jpg) center center; background-size: cover; }
+header nav a, header .kicker, footer .footer-content nav a { font-size: 1em; font-weight: 700; font-text-transform: uppercase; }
 
-header .logo { float: left; margin: 30px 0 0 30px; height: 50px; width: 50px; }
+* body, header, header .header-logo, header .header-logo path, header nav, header nav a, header h1, header .kicker, .about, .about h2, .about .photo-wrapper .photo, .about .skill-lockup, .social-wrapper ul li a span, .social-wrapper ul li a, .contact-wrapper form label input, .contact-wrapper form label textarea, .contact-wrapper form input#button, footer, footer .footer-logo, footer .footer-content nav, footer .footer-content nav a { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; }
 
-header .logo path { fill: rgba(0, 0, 0, 0.9); }
+.about .photo-wrapper, .about .photo-wrapper .photo, .about .skill-lockup .skill-unit .skill-icon span, .social-wrapper ul li a, .contact-wrapper form input#button { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; -ms-border-radius: 50%; }
 
-header nav { float: right; margin: 30px 30px 0 0; }
+* { margin: 0; padding: 0; }
 
-header nav a { text-decoration: none; display: inline-block; margin-left: 30px; color: rgba(0, 0, 0, 0.5); }
+* *:focus { outline: none; }
 
-header nav a:hover { color: black; }
+* body { font-family: bitter; font-size: 90%; clear: both; margin: 0 auto; color: #e1c184; text-align: center; }
 
-header h1 { text-align: center; font-size: 52px; font-weight: 700; font-text-transform: uppercase; color: white; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; padding-top: 100px; text-shadow: 2px 2px 20px black; clear: both; }
+* body span { display: inline-block; }
+
+header { height: 35em; background: url(../img/background.jpg) center center; background-size: cover; }
+
+header .header-logo { float: left; margin: 1em 0 0 2em; width: 3em; height: 3em; }
+
+header .header-logo path { fill: white; }
+
+header nav { float: right; margin: 1.5em 3em 0 0; }
+
+header nav a { text-decoration: none; display: inline-block; margin-left: 3em; color: #e1c184; }
+
+header nav a:hover { color: white; text-shadow: 0.1em 0.1em 1em white; -webkit-text-shadow: 0.1em 0.1em 1em white; -moz-text-shadow: 0.1em 0.1em 1em white; -o-text-shadow: 0.1em 0.1em 1em white; -ms-text-shadow: 0.1em 0.1em 1em white; transition: color 0.5s; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; -ms-transition: color 0.5s; }
+
+header h1 { text-align: center; color: white; letter-spacing: 0.05em; margin-bottom: 0.2em; padding-top: 3.5em; clear: both; }
 
 header h1 span { display: inline-block; }
 
-header .kicker { text-align: center; text-transform: uppercase; letter-spacing: 0.5em; color: white; line-height: 1; text-shadow: 2px 2px 20px black; }
+header .kicker { text-align: center; letter-spacing: 0.5em; color: white; line-height: 1; }
 
-footer { background: url(../img/header_bg.jpg) center top; background-size: cover; }
+header h1, header .kicker { text-shadow: 2px 2px 15px black; -webkit-text-shadow: 2px 2px 15px black; -moz-text-shadow: 2px 2px 15px black; -o-text-shadow: 2px 2px 15px black; -ms-text-shadow: 2px 2px 15px black; }
 
-footer .locup { padding: 50px 30px; clear: both; display: table; }
+.about { border-left: 0.4em double #e1c184; border-right: 0.4em double #e1c184; clear: both; display: table; width: 80%; margin: 4em  auto; background: white; }
 
-footer .locup .logo { width: 50px; height: 50px; float: left; margin-right: 30px; }
+.about h2 { clear: both; margin: 2em auto 2em; padding-top: 1em; color: #e1c184; text-align: center; }
 
-footer .locup .logo path { fill: rgba(0, 0, 0, 0.9); }
+.about h2 span { display: inline-block; }
 
-footer .locup .footer-content-wrapper { float: left; }
+.about .photo-wrapper { margin: 0 auto; width: 15em; height: 15em; border: 0.1em double #b57805; }
 
-footer .locup .footer-content-wrapper .copyright { text-transform: uppercase; color: rgba(0, 0, 0, 0.5); }
+.about .photo-wrapper .photo { background: url(../img/men-at-work.png) center center; background-repeat: no-repeat; width: 15em; height: 15em; }
 
-footer .locup .footer-content-wrapper a { color: rgba(0, 0, 0, 0.7); text-decoration: none; display: inline-block; margin-right: 30px; }
+.about .description { background: transparent url(../img/l.png); background-position: left top; background-repeat: no-repeat; background-size: 6em; font-size: 1.1em; font-family: Vollkorn; margin: 1em auto 2em; max-width: 40em; padding: 2em 2em; text-align: justify; color: rgba(0, 0, 0, 0.8); }
 
-footer .locup .footer-content-wrapper a:hover { color: black; }
+.about .skill-lockup { width: 40em; margin: 0 auto 3em; text-align: center; clear: both; color: rgba(0, 0, 0, 0.7); display: table; }
 
-h3 { color: #e1c184; text-align: center; padding: 50px 0 50px; }
+.about .skill-lockup h2 { margin: 1em auto; }
 
-.face-lockup { max-width: 700px; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; text-align: center; margin: 0 auto; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: distribute; -moz-box-pack: distribute; box-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute; }
+.about .skill-lockup .skill-unit { float: left; width: 20em; margin: 0.4em auto; }
 
-.face-lockup .face-img { height: 200px; width: 200px; border-radius: 50%; background: lightgrey; order: 3; }
+.about .skill-lockup .skill-unit .skill-icon { margin: 0.3em auto; }
 
-.face-lockup [class^="icon-"] { height: 100px; width: 100px; border-radius: 50%; background: lightgrey; }
+.about .skill-lockup .skill-unit .skill-icon span { margin-left: 0.2em; display: inline-block; width: 0.7em; height: 0.7em; background: #c48204; border: 0.1em double black; box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white; -webkit-box-shadow: inset -0.05em -0.05em 0.35em black, inset 0.1em 0.1em 0.4em white; -moz-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white; -o-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white; -ms-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white; }
 
-.face-lockup [class^="icon-"].icon-pencil { order: 1; }
+.about .skill-lockup .skill-unit .skill-icon.sk-1 span:nth-child(n+2) { background: white; }
 
-.face-lockup [class^="icon-"].icon-mouse { order: 2; }
+.about .skill-lockup .skill-unit .skill-icon.sk-2 span:nth-child(n+3) { background: white; }
 
-.face-lockup [class^="icon-"].icon-browser { order: 4; }
+.about .skill-lockup .skill-unit .skill-icon.sk-3 span:nth-child(n+4) { background: white; }
 
-.face-lockup [class^="icon-"].icon-video { order: 5; }
+.about .skill-lockup .skill-unit .skill-icon.sk-4 span:nth-child(n+5) { background: white; }
 
-@media screen and (max-width: 650px) { .face-lockup { display: block; text-align: center; }
-  .face-lockup div { display: inline-block; }
-  .face-lockup .face-img { display: block; background-position: center center; background-repeat: no-repeat; width: auto; margin-bottom: 30px; }
-  .face-lockup [class^="icon-"] { margin: 10px; } }
+.about .skill-lockup .skill-unit .skill-icon.sk-5 span:nth-child(n+6) { background: white; }
 
-.blurb { max-width: 620px; padding: 0 15px; margin: 50px auto; font-size: 18px; font-weight: 300; text-align: justify; }
+.about .skill-lockup .skill-unit .skill-icon.sk-6 span:nth-child(n+7) { background: white; }
 
-.skill-lockup { text-align: center; max-width: 540px; margin: 30px auto; color: #999; }
+.about .skill-lockup .skill-unit .skill-icon.sk-7 span:nth-child(n+8) { background: white; }
 
-.skill-lockup::after { clear: both; content: ""; display: table; }
+.about .skill-lockup .skill-unit .skill-icon.sk-8 span:nth-child(n+9) { background: white; }
 
-.skill-lockup .skill-unit { width: 270px; float: left; }
+.about .skill-lockup .skill-unit .skill-icon.sk-9 span:nth-child(n+10) { background: white; }
 
-.skill-lockup .skill-icons { margin: 2px 0 30px; }
+.about .skill-lockup .skill-unit .skill-icon.sk-10 span:nth-child(n+11) { background: white; }
 
-.skill-lockup .skill-icons span { display: inline-block; height: 14px; width: 14px; background-color: #c99065; margin-right: 5px; border-radius: 50%; }
+.projects-wrapper { width: 100%; height: 20em; background: #e1c184; }
 
-.skill-lockup .skill-icons span:after { content: ""; display: block; height: 10px; width: 10px; background: white; border-radius: 50%; margin: 2px; }
+.projects-wrapper h2 { color: white; padding-top: 2em; display: inline-block; }
 
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+2) { background: darkgrey; }
+.clients-wrapper { width: 100%; height: 20em; }
 
-.skill-lockup .skill-icons.skill-2 span:nth-child(n+3) { background: darkgrey; }
+.clients-wrapper h2 { padding-top: 2em; display: inline-block; }
 
-.skill-lockup .skill-icons.skill-3 span:nth-child(n+4) { background: darkgrey; }
+.social-wrapper { background: #e1c184; margin: 1em auto; }
 
-.skill-lockup .skill-icons.skill-4 span:nth-child(n+5) { background: darkgrey; }
+.social-wrapper ul { padding-top: 7em; text-align: center; }
 
-.skill-lockup .skill-icons.skill-5 span:nth-child(n+6) { background: darkgrey; }
+.social-wrapper ul li { list-style: none; }
 
-.skill-lockup .skill-icons.skill-6 span:nth-child(n+7) { background: darkgrey; }
+.social-wrapper ul li a { background: rgba(255, 255, 255, 0.1); text-align: center; display: inline-block; text-decoration: none; color: white; width: 1em; height: 1em; padding: 0.2em 0.5em 0.8em; border: 0.13em solid white; font-size: 1.5em; font-weight: 700; }
 
-.skill-lockup .skill-icons.skill-7 span:nth-child(n+8) { background: darkgrey; }
+.social-wrapper ul li a:nth-child(1) { margin-right: 4em; }
 
-.skill-lockup .skill-icons.skill-8 span:nth-child(n+9) { background: darkgrey; }
+.social-wrapper ul li a:nth-child(1):before { content: "f"; }
 
-.skill-lockup .skill-icons.skill-9 span:nth-child(n+10) { background: darkgrey; }
+.social-wrapper ul li a:nth-child(1) span { margin: -1em 0.8em; }
 
-.skill-lockup .skill-icons.skill-10 span:nth-child(n+11) { background: darkgrey; }
+.social-wrapper ul li a:nth-child(1) span:before { content: "acebook"; }
 
-@media screen and (max-width: 650px) { .skill-lockup { width: 270px; } }
+.social-wrapper ul li a:nth-child(2) { margin-right: 4em; }
+
+.social-wrapper ul li a:nth-child(2):before { content: "t"; }
+
+.social-wrapper ul li a:nth-child(2) span { margin: -1em 0.8em; }
+
+.social-wrapper ul li a:nth-child(2) span:before { content: "witer"; }
+
+.social-wrapper ul li a:nth-child(3) { margin-right: 4em; }
+
+.social-wrapper ul li a:nth-child(3):before { content: "in"; }
+
+.social-wrapper ul li a:nth-child(3) span { margin: -1em 0.85em; }
+
+.social-wrapper ul li a:nth-child(3) span:before { content: "inkedin"; }
+
+.social-wrapper ul li a:nth-child(4) { margin-right: 4em; }
+
+.social-wrapper ul li a:nth-child(4):before { content: "G"; }
+
+.social-wrapper ul li a:nth-child(4) span { margin: -1em 0.9em; }
+
+.social-wrapper ul li a:nth-child(4) span:before { content: "ithub"; }
+
+.social-wrapper ul li a:nth-child(5):before { content: "Be"; }
+
+.social-wrapper ul li a:nth-child(5) span { margin: -1em 0.85em; }
+
+.social-wrapper ul li a:nth-child(5) span:before { content: "ehance"; }
+
+.social-wrapper ul li a span { visibility: hidden; display: table; opacity: 0; margin: 1em; font-size: 0.95em; }
+
+.social-wrapper ul li a:hover:nth-child(1) { border: 0.13em solid rgba(255, 255, 255, 0.5); background: #2b398f; box-shadow: 0.01em 0.01em 0.3em #2b398f; -webkit-box-shadow: 0.01em 0.01em 0.3em #2b398f; -moz-box-shadow: 0.01em 0.01em 0.3em #2b398f; -o-box-shadow: 0.01em 0.01em 0.3em #2b398f; -ms-box-shadow: 0.01em 0.01em 0.3em #2b398f; }
+
+.social-wrapper ul li a:hover:nth-child(1) span { width: 100%; margin: 0.5em; opacity: 1; margin: -1.45em 0.8em; visibility: visible; }
+
+@media (-webkit-min-device-pixel-ratio: 0) { .social-wrapper ul li a:hover:nth-child(1) span { margin: -1.36em 0.8em; } }
+
+.social-wrapper ul li a:hover:nth-child(2) { border: 0.13em solid rgba(255, 255, 255, 0.5); background: #27aae1; box-shadow: 0.01em 0.01em 0.3em #27aae1; -webkit-box-shadow: 0.01em 0.01em 0.3em #27aae1; -moz-box-shadow: 0.01em 0.01em 0.3em #27aae1; -o-box-shadow: 0.01em 0.01em 0.3em #27aae1; -ms-box-shadow: 0.01em 0.01em 0.3em #27aae1; }
+
+.social-wrapper ul li a:hover:nth-child(2) span { width: 100%; margin: 0.5em; opacity: 1; margin: -1.45em 0.8em; visibility: visible; }
+
+@media (-webkit-min-device-pixel-ratio: 0) { .social-wrapper ul li a:hover:nth-child(2) span { margin: -1.36em 0.8em; } }
+
+.social-wrapper ul li a:hover:nth-child(3) { border: 0.13em solid rgba(255, 255, 255, 0.5); background: #125b95; box-shadow: 0.01em 0.01em 0.3em #125b95; -webkit-box-shadow: 0.01em 0.01em 0.3em #125b95; -moz-box-shadow: 0.01em 0.01em 0.3em #125b95; -o-box-shadow: 0.01em 0.01em 0.3em #125b95; -ms-box-shadow: 0.01em 0.01em 0.3em #125b95; }
+
+.social-wrapper ul li a:hover:nth-child(3):before { content: "L"; }
+
+.social-wrapper ul li a:hover:nth-child(3) span { width: 100%; margin: 0.5em; opacity: 1; margin: -1.45em 0.85em; visibility: visible; }
+
+@media (-webkit-min-device-pixel-ratio: 0) { .social-wrapper ul li a:hover:nth-child(3) span { margin: -1.36em 0.85em; } }
+
+.social-wrapper ul li a:hover:nth-child(4) { border: 0.13em solid rgba(255, 255, 255, 0.5); background: #260f16; box-shadow: 0.01em 0.01em 0.3em #260f16; -webkit-box-shadow: 0.01em 0.01em 0.3em #260f16; -moz-box-shadow: 0.01em 0.01em 0.3em #260f16; -o-box-shadow: 0.01em 0.01em 0.3em #260f16; -ms-box-shadow: 0.01em 0.01em 0.3em #260f16; }
+
+.social-wrapper ul li a:hover:nth-child(4) span { width: 100%; margin: 0.5em; opacity: 1; margin: -1.45em 0.9em; visibility: visible; }
+
+@media (-webkit-min-device-pixel-ratio: 0) { .social-wrapper ul li a:hover:nth-child(4) span { margin: -1.36em 0.9em; } }
+
+.social-wrapper ul li a:hover:nth-child(5) { border: 0.13em solid rgba(255, 255, 255, 0.5); background: #1c75bc; box-shadow: 0.01em 0.01em 0.3em #1c75bc; -webkit-box-shadow: 0.01em 0.01em 0.3em #1c75bc; -moz-box-shadow: 0.01em 0.01em 0.3em #1c75bc; -o-box-shadow: 0.01em 0.01em 0.3em #1c75bc; -ms-box-shadow: 0.01em 0.01em 0.3em #1c75bc; }
+
+.social-wrapper ul li a:hover:nth-child(5):before { content: "B"; }
+
+.social-wrapper ul li a:hover:nth-child(5) span { width: 100%; margin: 0.5em; opacity: 1; margin: -1.45em 0.85em; visibility: visible; }
+
+@media (-webkit-min-device-pixel-ratio: 0) { .social-wrapper ul li a:hover:nth-child(5) span { margin: -1.36em 0.85em; } }
+
+.social-wrapper h1 { text-align: center; padding: 1.2em 0 1.8em; color: white; font-family: Baskerville; font-size: 4em; font-weight: 700; }
+
+.contact-wrapper { margin: 0 auto; }
+
+.contact-wrapper h2 { margin: 3em auto 2em; text-align: center; color: #e1c184; }
+
+.contact-wrapper h2 span { display: inline-block; }
+
+.contact-wrapper form { text-align: center; margin: 0 auto 6em; max-width: 30em; }
+
+.contact-wrapper form label { margin: 1em auto; display: block; width: 100%; }
+
+.contact-wrapper form label h3 { text-align: left; color: #e1c184; font-weight: 400; margin-bottom: 0.4em; }
+
+.contact-wrapper form label input, .contact-wrapper form label textarea { width: 100%; border: 0.1em solid #e1c184; color: rgba(0, 0, 0, 0.8); }
+
+.contact-wrapper form label input:focus, .contact-wrapper form label textarea:focus { box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -webkit-box-shadow: inset 0.01em 0.01em 0.8em #e1c184; -moz-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -o-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -ms-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; }
+
+.contact-wrapper form label input { -webkit-appearance: none; height: 3em; padding: 0 1em; }
+
+.contact-wrapper form label textarea { -webkit-appearance: none; padding: 1em 1em 2.5em; height: 15em; }
+
+.contact-wrapper form input#button { background: white; border: 0.1em solid #e1c184; width: 4em; height: 4em; color: #b57805; font-size: 1em; font-weight: 700; }
+
+.contact-wrapper form input#button:hover { cursor: pointer; border: 0.1em solid #b57805; box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -webkit-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -moz-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -o-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; -ms-box-shadow: inset 0.01em 0.01em 0.5em #e1c184; }
+
+footer { height: 15em; background: url(../img/background.jpg) center center; background-size: cover; }
+
+footer .footer-logo { float: left; width: 3.5em; height: 3.5em; margin: 5em 2em 0 2em; }
+
+footer .footer-logo path { fill: white; }
+
+footer .footer-content { float: left; margin-top: 5.2em; }
+
+footer .footer-content nav a { float: left; color: rgba(255, 255, 255, 0.7); margin-right: 2em; text-decoration: none; display: inline-block; }
+
+footer .footer-content nav a:hover { color: white; text-shadow: 0.1em 0.1em 1em white; -webkit-text-shadow: 0.1em 0.1em 1em white; -moz-text-shadow: 0.1em 0.1em 1em white; -o-text-shadow: 0.1em 0.1em 1em white; -ms-text-shadow: 0.1em 0.1em 1em white; transition: color 0.5s; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; -ms-transition: color 0.5s; }
+
+footer .footer-content p { float: left; padding-top: 0.5em; color: white; }
+
+@media screen and (min-width: 1200px) { section .about { width: 70em; } }
+
+@media screen and (max-width: 750px) { section .about { width: 70%; }
+  section .social-wrapper ul li a:nth-child(1) { margin-right: 3em; }
+  section .social-wrapper ul li a:nth-child(2) { margin-right: 3em; }
+  section .social-wrapper ul li a:nth-child(3) { margin-right: 3em; }
+  section .social-wrapper ul li a:nth-child(4) { margin-right: 3em; }
+  section .social-wrapper ul li a span { font-size: 0.8em; }
+  section .social-wrapper ul li a:hover:nth-child(1) span { margin: -1.5em 0.9em; }
+  section .social-wrapper ul li a:hover:nth-child(2) span { margin: -1.5em 0.9em; }
+  section .social-wrapper ul li a:hover:nth-child(3) span { margin: -1.5em 1em; }
+  section .social-wrapper ul li a:hover:nth-child(4) span { margin: -1.5em 1.1em; }
+  section .social-wrapper ul li a:hover:nth-child(5) span { margin: -1.5em 1.05em; }
+  section .social-wrapper h1 { font-size: 3.3em; padding: 1.2em 0 2em; } }
+
+@media screen and (max-width: 680px) { header .header-logo { margin: 1em 0 0 1em; }
+  header nav { margin: 1.5em 2em 0 0; }
+  header nav a { margin-left: 2em; }
+  header h1 { padding-top: 4em; letter-spacing: 0.04em; font-size: 2.6em; }
+  header .kicker { letter-spacing: 0.4em; font-size: 0.9em; }
+  section .about { width: 90%; }
+  section .about .skill-lockup { width: 30em; }
+  section .about .skill-lockup .skill-unit { width: 15em; }
+  section .social-wrapper ul { padding-top: 5em; }
+  section .social-wrapper ul li a:nth-child(1) { margin-right: 1.5em; }
+  section .social-wrapper ul li a:nth-child(1):before { content: "f"; }
+  section .social-wrapper ul li a:nth-child(1) span { margin: 1.5em -1.8em; }
+  section .social-wrapper ul li a:nth-child(1) span:before { content: "Facebook"; }
+  section .social-wrapper ul li a:nth-child(2) { margin-right: 1.5em; }
+  section .social-wrapper ul li a:nth-child(2):before { content: "t"; }
+  section .social-wrapper ul li a:nth-child(2) span { margin: 1.5em -1.1em; }
+  section .social-wrapper ul li a:nth-child(2) span:before { content: "Twiter"; }
+  section .social-wrapper ul li a:nth-child(3) { margin-right: 1.5em; }
+  section .social-wrapper ul li a:nth-child(3):before { content: "in"; }
+  section .social-wrapper ul li a:nth-child(3) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(3) span:before { content: "Linkedin"; }
+  section .social-wrapper ul li a:nth-child(4) { margin-right: 1.5em; }
+  section .social-wrapper ul li a:nth-child(4):before { content: "G"; }
+  section .social-wrapper ul li a:nth-child(4) span { margin: 1.5em -1.2em; }
+  section .social-wrapper ul li a:nth-child(4) span:before { content: "Github"; }
+  section .social-wrapper ul li a:nth-child(5):before { content: "Be"; }
+  section .social-wrapper ul li a:nth-child(5) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(5) span:before { content: "Behance"; }
+  section .social-wrapper ul li a:hover:nth-child(1) span { margin: 0.8em -1.8em; }
+  section .social-wrapper ul li a:hover:nth-child(2) span { margin: 0.8em -1.1em; }
+  section .social-wrapper ul li a:hover:nth-child(3):before { content: "in"; }
+  section .social-wrapper ul li a:hover:nth-child(3) span { margin: 0.8em -1.5em; }
+  section .social-wrapper ul li a:hover:nth-child(4) span { margin: 0.8em -1.2em; }
+  section .social-wrapper ul li a:hover:nth-child(5):before { content: "Be"; }
+  section .social-wrapper ul li a:hover:nth-child(5) span { margin: 0.8em -1.5em; }
+  section .social-wrapper h1 { font-size: 2.5em; padding: 1.2em 0 2.5em; }
+  footer .footer-logo { margin: 5em 1em 0 1em; transition: 0.5s; }
+  footer nav { transition: 0.5s; }
+  footer nav a { margin-right: 2em; transition: 0.5s; }
+  footer p { font-size: 0.8em; font-transition: 0.5s; } }
+
+@media screen and (max-width: 550px) { header .header-logo { margin: 1em 0 0 1em; }
+  header nav { margin: 1.5em 2em 0 0; }
+  header nav a { margin-left: 2em; font-size: 0.9em; }
+  header h1 { padding-top: 4em; letter-spacing: 0.04em; font-size: 2.5em; }
+  header .kicker { letter-spacing: 0.4em; font-size: 0.84em; }
+  section .about { width: 95%; }
+  section .about .photo-wrapper { margin: 0 auto; }
+  section .about .photo-wrapper .photo { width: 15em; height: 15em; }
+  section .about .description { font-size: 1.1em; width: 25em; padding: 2em 1em; }
+  section .about .skill-lockup { width: 30em; margin: 0 auto 2em; }
+  section .about .skill-lockup h2 { margin: 1em auto 2em; }
+  section .about .skill-lockup .skill-unit { width: 15em; margin: 1em auto; }
+  section .social-wrapper ul li a:nth-child(1) { margin-right: 1em; }
+  section .social-wrapper ul li a:nth-child(1):before { content: "f"; }
+  section .social-wrapper ul li a:nth-child(1) span { margin: 1.5em -1.8em; }
+  section .social-wrapper ul li a:nth-child(1) span:before { content: "Facebook"; }
+  section .social-wrapper ul li a:nth-child(2) { margin-right: 1em; }
+  section .social-wrapper ul li a:nth-child(2):before { content: "t"; }
+  section .social-wrapper ul li a:nth-child(2) span { margin: 1.5em -1.1em; }
+  section .social-wrapper ul li a:nth-child(2) span:before { content: "Twiter"; }
+  section .social-wrapper ul li a:nth-child(3) { margin-right: 1em; }
+  section .social-wrapper ul li a:nth-child(3):before { content: "in"; }
+  section .social-wrapper ul li a:nth-child(3) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(3) span:before { content: "Linkedin"; }
+  section .social-wrapper ul li a:nth-child(4) { margin-right: 1em; }
+  section .social-wrapper ul li a:nth-child(4):before { content: "G"; }
+  section .social-wrapper ul li a:nth-child(4) span { margin: 1.5em -1.2em; }
+  section .social-wrapper ul li a:nth-child(4) span:before { content: "Github"; }
+  section .social-wrapper ul li a:nth-child(5):before { content: "Be"; }
+  section .social-wrapper ul li a:nth-child(5) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(5) span:before { content: "Behance"; }
+  section .social-wrapper ul li a:hover:nth-child(1) span { margin: 0.8em -1.8em; }
+  section .social-wrapper ul li a:hover:nth-child(2) span { margin: 0.8em -1.1em; }
+  section .social-wrapper ul li a:hover:nth-child(3):before { content: "in"; }
+  section .social-wrapper ul li a:hover:nth-child(3) span { margin: 0.8em -1.5em; }
+  section .social-wrapper ul li a:hover:nth-child(4) span { margin: 0.8em -1.2em; }
+  section .social-wrapper ul li a:hover:nth-child(5):before { content: "Be"; }
+  section .social-wrapper ul li a:hover:nth-child(5) span { margin: 0.8em -1.5em; }
+  section .social-wrapper h1 { font-size: 2.1em; }
+  footer .footer-logo { margin: 5em 1em 0 1em; transition: 0.5s; }
+  footer .footer-content nav a { margin-right: 1em; transition: 0.5s; }
+  footer .footer-content p { font-size: 0.7em; font-transition: 0.5s; } }
+
+@media screen and (max-width: 480px) { header { height: 40em; }
+  header .header-logo { float: none; margin: 0 auto; padding-top: 2em; width: 8em; height: 8em; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; }
+  header .header-logo svg { width: 8em; height: 8em; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; }
+  header .header-logo path { fill: white; }
+  header nav { float: none; padding: 1.5em 0; margin: 1em auto; width: 100%; text-align: center; }
+  header nav a { font-size: 0.9em; display: block; margin: 0.07em 0; padding: 0.2em 1em; color: rgba(255, 255, 255, 0.7); transition: 0.5s; -webkit-transition: 0.5s; }
+  header nav a:hover { background: rgba(0, 0, 0, 0.4); }
+  header h1 { padding-top: 0; letter-spacing: 0.04em; font-size: 2.5em; }
+  header .kicker { letter-spacing: 0.3em; font-size: 0.7em; }
+  section .about { width: 95%; margin: 4em auto; }
+  section .about h2 { margin: 2em auto 2em; }
+  section .about .photo-wrapper { margin: 0 auto; width: 14em; height: 14em; }
+  section .about .photo-wrapper .photo { width: 14em; height: 14em; }
+  section .about .description { background-size: 3em; font-size: 1em; margin: 3em auto 4em; max-width: 25em; padding: 1.5em 1em; text-align: justify; }
+  section .about .skill-lockup { width: 15em; margin: 0 auto 2em; }
+  section .about .skill-lockup h2 { margin: 1em auto 2em; }
+  section .about .skill-lockup .skill-unit { width: 15em; margin: 1em auto; }
+  section .contact-wrapper form label { margin: 1em auto; display: block; width: 96%; }
+  footer { height: 25em; }
+  footer .footer-logo { float: none; margin: 0 auto; padding-top: 4em; width: 6em; height: 6em; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; }
+  footer .footer-logo svg { width: 6em; height: 6em; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; }
+  footer .footer-logo path { fill: white; }
+  footer .footer-content { float: none; clear: both; display: inline-table; margin: 4em auto; text-align: center7; }
+  footer .footer-content nav { padding: 5em auto 0; text-align: center; }
+  footer .footer-content nav a { color: rgba(255, 255, 255, 0.7); margin-right: 0.8em; float: none; }
+  footer .footer-content nav a:hover { color: white; }
+  footer .footer-content p { float: none; padding: 1em 0 0 0; text-align: center; margin-right: 1em; font-size: 0.8em; font-transition: 0.5s; } }
+
+@media screen and (max-width: 420px) { section .about .description { font-size: 1em; margin: 3em auto 4em; max-width: 22em; padding: 1.5em 1em; }
+  section .contact-wrapper form label { margin: 1em auto; display: block; width: 94%; }
+  footer .footer-content nav a { font-size: 0.9em; } }
+
+@media screen and (max-width: 400px) { section .about .description { font-size: 1em; margin: 3em auto 4em; max-width: 21em; padding: 1.5em 1em; }
+  section .social-wrapper ul li a { height: 1em; padding: 0.2em 0.5em 0.8em; border: 0.13em solid white; font-size: 1.3em; }
+  section .social-wrapper ul li a:nth-child(1) { margin-right: 0.5em; }
+  section .social-wrapper ul li a:nth-child(1):before { content: "f"; }
+  section .social-wrapper ul li a:nth-child(1) span { margin: 1.5em -1.8em; }
+  section .social-wrapper ul li a:nth-child(1) span:before { content: ""; }
+  section .social-wrapper ul li a:nth-child(2) { margin-right: 0.5em; }
+  section .social-wrapper ul li a:nth-child(2):before { content: "t"; }
+  section .social-wrapper ul li a:nth-child(2) span { margin: 1.5em -1.1em; }
+  section .social-wrapper ul li a:nth-child(2) span:before { content: ""; }
+  section .social-wrapper ul li a:nth-child(3) { margin-right: 0.5em; }
+  section .social-wrapper ul li a:nth-child(3):before { content: "in"; }
+  section .social-wrapper ul li a:nth-child(3) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(3) span:before { content: ""; }
+  section .social-wrapper ul li a:nth-child(4) { margin-right: 0.5em; }
+  section .social-wrapper ul li a:nth-child(4):before { content: "G"; }
+  section .social-wrapper ul li a:nth-child(4) span { margin: 1.5em -1.2em; }
+  section .social-wrapper ul li a:nth-child(4) span:before { content: ""; }
+  section .social-wrapper ul li a:nth-child(5):before { content: "Be"; }
+  section .social-wrapper ul li a:nth-child(5) span { margin: 1.5em -1.5em; }
+  section .social-wrapper ul li a:nth-child(5) span:before { content: ""; }
+  section .social-wrapper h1 { font-size: 1.8em; } }
+
+@media screen and (max-width: 390px) { section .about .description { font-size: 1em; margin: 3em auto 4em; max-width: 20em; padding: 1.5em 1em; } }
+
+@media screen and (max-width: 350px) { section .about .description { max-width: 19em; } }
+
+@media screen and (max-width: 330px) { section .about .description { max-width: 17em; } }

@@ -1,0 +1,76 @@
+// 01 07 10 12
+
+header
+	height: 35em
+	background: url(../img/background.jpg) center center
+	background-size: cover
+	@extend %transition 
+	
+	.header-logo
+		float: left
+		margin: 1em 0 0 2em
+		width: 3em
+		height: 3em
+		@extend %transition
+	
+		path
+			fill: white
+			@extend %transition
+
+	nav
+		float: right
+		margin: 1.5em 3em 0 0
+		@extend %transition
+
+		a
+			text-decoration: none
+			display: inline-block
+			margin-left: 3em
+			color: $accend
+			@extend  %def-sub
+			@extend %transition
+
+			&:hover
+				color: rgba(255,255,255,1)
+				
+				text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+				-webkit-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+				-moz-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+				-o-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+				-ms-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+				
+				transition: color 0.5s
+				-webkit-transition: color 0.5s
+				-moz-transition: color 0.5s
+				-o-transition: color 0.5s
+				-ms-transition: color 0.5s
+
+	h1
+		text-align: center
+		@extend %def-title
+		color: white
+		letter-spacing: 0.05em
+		margin-bottom: 0.2em
+		padding-top: 3.5em
+		clear: both
+		@extend %transition
+
+
+		span
+			display: inline-block
+
+	.kicker
+		text-align: center
+		@extend %def-sub
+		letter-spacing: 0.5em
+		color: white
+		line-height: 1
+		@extend %transition
+
+	h1, .kicker
+		text-shadow: 2px 2px 15px rgba(0,0,0,1)
+		-webkit-text-shadow: 2px 2px 15px rgba(0,0,0,1)
+		-moz-text-shadow: 2px 2px 15px rgba(0,0,0,1)
+		-o-text-shadow: 2px 2px 15px rgba(0,0,0,1)
+		-ms-text-shadow: 2px 2px 15px rgba(0,0,0,1)
+

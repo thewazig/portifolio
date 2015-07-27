@@ -1,0 +1,50 @@
+footer
+	height: 15em
+	background: url(../img/background.jpg) center center
+	background-size: cover
+	@extend %transition
+
+	.footer-logo
+		float:left
+		width: 3.5em 
+		height: 3.5em
+		margin: 5em 2em 0 2em
+		@extend %transition
+
+		path
+			fill: rgba(255,255,255,1)
+
+	.footer-content
+		float: left
+		margin-top: 5.2em
+		nav 
+			@extend %transition
+
+			a 
+				float: left
+				color: rgba(255,255,255,0.7)
+				margin-right: 2em
+				text-decoration: none
+				display: inline-block
+				@extend %def-sub
+				@extend %transition
+
+				&:hover
+					color: rgba(255,255,255,1)
+
+					text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+					-webkit-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+					-moz-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+					-o-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+					-ms-text-shadow: 0.1em 0.1em 1em rgba(255,255,255,1)
+
+					transition: color 0.5s
+					-webkit-transition: color 0.5s
+					-moz-transition: color 0.5s
+					-o-transition: color 0.5s
+					-ms-transition: color 0.5s
+
+		p
+			float: left
+			padding-top: 0.5em 
+			color: rgba(255,255,255,1)

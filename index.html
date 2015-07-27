@@ -1,20 +1,259 @@
----
----
+
 <html lang="pt-br">
   <head>
-    <title> </title>
+    <title>My Portifolio</title>
     <meta charset="utf-8"/>
-    <meta mane="viewport" content="width=device-width, initial-scale=01"/>
-    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=01"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Bitter:400,700|Vollkorn:400,400italic,700,700italic|Libre+Baskerville:400,700" rel="stylesheet" type="text/css"/>
+  
+  <script type="text/javascript">
+<!--
+var features = 'toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=no,left=,top=,width=,height=';
+var searchDatabase = new SearchDatabase();
+var searchResults_length = 0;
+var searchResults = new Object();
+function searchPage(features)
+{
+   var element = document.getElementById('SiteSearch1_keyword');
+   if (element.value.length != 0 || element.value != " ")
+   {
+      var value = unescape(element.value);
+      var keywords = value.split(" ");
+      searchResults_length = 0;
+      for (var i=0; i<database_length; i++)
+      {
+         var matches = 0;
+         var words = searchDatabase[i].title + " " + searchDatabase[i].description + " " + searchDatabase[i].keywords;
+         for (var j = 0; j < keywords.length; j++)
+         {
+            var pattern = new RegExp(keywords[j], "i");
+            var result = words.search(pattern);
+            if (result >= 0)
+            {
+               matches++;
+            }
+            else
+            {
+               matches = 0;
+            }
+         }
+         if (matches == keywords.length)
+         {
+            searchResults[searchResults_length++] = searchDatabase[i];
+         }
+      }
+      var wndResults = window.open('about:blank', '', features);
+      setTimeout(function()
+      {
+         var html = '<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Search results</title></head>';
+         html = html + '<body style="background-color:#FFFFFF;margin:0;padding:0px 0px 0px 0px;">';
+         html = html + '<span style="font-family:Arial;font-size:0px;color:#000000">';
+         for (var n=0; n<searchResults_length; n++)
+         {
+            html = html + '<b><a style="color:#0000FF" target="_parent" href="'+searchResults[n].url+'">'+searchResults[n].title +'</a></b><br><br>\n';
+         }
+         if (searchResults_length == 0)
+         {
+            html = html + 'No results';
+         }
+         html = html + '</span>';
+         html = html + '</body></html>';
+         wndResults.document.write(html);
+     },100);
+   }
+   return false;
+}
+// -->
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   var $search = $('#SiteSearch1_form');
+   var $searchInput = $search.find('input');
+   var $searchLabel = $search.find('label');
+   if ($searchInput.val())
+   {
+      $searchLabel.hide();
+   }
+   $searchInput.focus(function()
+   {
+      $searchLabel.hide();
+   }).blur(function()
+   {
+      if (this.value == '')
+      {
+         $searchLabel.show();
+      }
+   });
+   $searchLabel.click(function()
+   {
+      $searchInput.trigger('focus');
+   });
+
+});
+</script>
+
   </head>
   <body>
-    
-    {% include header.html %}
-    
-    {% include about.html %}
+    <header>
+      <div class="header-logo"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<g>
+	<path d="M0,26.988c0-1.354,0-2.707,0-4.061c0.051-0.216,0.125-0.43,0.15-0.649C1.366,11.53,8.939,3.014,19.506,0.546
+		c1.143-0.267,2.311-0.423,3.467-0.63c1.351,0,2.703,0,4.054,0c0.186,0.049,0.37,0.124,0.559,0.143
+		c10.559,1.062,19.395,8.86,21.751,19.222c0.274,1.204,0.444,2.431,0.663,3.647c0,1.354,0,2.707,0,4.061
+		c-0.051,0.216-0.128,0.429-0.15,0.647C48.81,38.05,41.004,46.959,30.827,49.308c-1.253,0.289-2.533,0.464-3.8,0.692
+		c-1.351,0-2.703,0-4.054,0c-0.186-0.049-0.37-0.124-0.559-0.143c-10.871-1.094-19.847-9.294-21.93-20.049
+		C0.302,28.873,0.16,27.929,0,26.988z M24.073,30.395c0.086,0.022,0.172,0.043,0.259,0.065c0.054,0.187,0.134,0.37,0.156,0.56
+		c0.235,1.957,0.428,3.919,0.701,5.87c0.147,1.049,0.3,2.129,0.678,3.107c0.449,1.161,1.448,1.417,2.563,0.88
+		c0.201-0.097,0.405-0.23,0.618-0.255c1.175-0.138,1.963-0.782,2.407-1.844c1.074-2.566,2.206-5.111,3.159-7.721
+		c0.993-2.719,1.963-5.465,2.646-8.272c0.602-2.474,1.546-4.935,1.171-7.579c-0.025-0.177,0.078-0.386,0.16-0.561
+		c0.694-1.471,0.485-3.035,0.46-4.574c-0.01-0.631-0.444-0.746-0.843-0.369c-0.545,0.517-1.118,1.082-1.434,1.744
+		c-0.398,0.831-0.819,1.724-0.459,2.742c0.108,0.307,0.02,0.724-0.082,1.059c-1.235,4.086-2.441,8.181-3.757,12.24
+		c-0.763,2.353-1.695,4.652-2.584,6.962c-0.19,0.492-0.524,0.929-0.882,1.545c-0.132-0.371-0.194-0.498-0.22-0.632
+		c-0.037-0.193-0.056-0.39-0.07-0.587c-0.396-5.705-0.139-11.362,1.105-16.965c0.316-1.422,0.442-2.893,0.565-4.35
+		c0.067-0.79-0.542-1.488-1.101-1.477c-1.362,0.026-3.096,1.251-3.577,2.557c-0.165,0.447-0.288,0.913-0.388,1.38
+		c-0.403,1.872-0.749,3.756-1.189,5.619c-1.15,4.873-2.907,9.516-5.357,13.887c-0.14,0.249-0.323,0.474-0.578,0.843
+		c-0.121-0.392-0.204-0.595-0.246-0.807c-0.913-4.565-1.535-9.158-1.38-13.833c0.042-1.265-0.052-2.535-0.094-3.802
+		c-0.016-0.477-0.131-0.96-0.084-1.429c0.143-1.428,0.216-2.882,0.554-4.267c0.439-1.796-0.271-3.175-1.205-4.553
+		c-0.542-0.8-1.306-1.048-2.204-0.898c-0.845,0.142-1.182,0.808-1.352,1.553c-0.181,0.796-0.316,1.602-0.452,2.408
+		c-0.604,3.592-1.008,7.203-0.906,10.852c0.027,0.965-0.042,2,1.012,2.605c0.176,0.101,0.275,0.426,0.314,0.663
+		c0.292,1.766,0.576,3.534,0.83,5.306c0.188,1.31,0.271,2.636,0.503,3.937c0.177,0.991,0.703,1.947,0.738,2.93
+		c0.068,1.877,0.723,3.563,1.37,5.257c0.387,1.014,1.129,1.267,2.022,0.632c0.681-0.485,1.291-1.184,1.696-1.919
+		c0.704-1.277,1.224-2.656,1.823-3.991C22.117,34.741,23.095,32.568,24.073,30.395z"/>
+</g>
+</svg>
 
-    {% include footer.html %}
-    
+      </div>
+      <nav><a href="#about-me ">ABOUT ME</a><a href="#projects">PROJECTS</a><a href="#clients">CLIENTS</a><a href="#contacts">CONTACT</a></nav>
+      <h1><span>WASHINGTON FERREIRA</span></h1>
+      <p class="kicker">WEB DESIGN || WEB DEVELOPER</p>
+    </header>
+    <section>
+      <div class="about">
+        <h2 id="about-me"> <span>ABOUT ME</span></h2>
+        <div class="photo-wrapper">
+          <div class="photo"></div>
+        </div>
+        <div class="description">
+          <p>
+             Seeing necktie knots laid out side-by-side is the fastest way to grasp how they differ from one another. In order to play fair, we tied each knot using neckties of the same material, thickness and width (3 ½ inches). We also made sure to photograph them to scale. This way you can appreciate the unique characteristics of each knot and discern the differences between them.
+            
+            Of the knots we tied, the smallest is the Simple knot, sometimes known as the Oriental. If there is a way to tie a necktie smaller we haven't found it. The monstrous Balthus knot is the largest of the knots we tied but in theory you could make a knot even larger if you had a long enough necktie. Take note of the overall shape of each knot. The Windsor is almost a perfect triangle. The Four-in-Hand is much more narrow. The Prince Albert has a second fold that peeks out at the bottom. Some knots, like the Kelvin and Four-in-Hand lean noticeably to one side. The Trinity delivers a rounded silhouette while the Van Wijk is cylindrical and the longest of the knots. 
+            
+            
+            
+          </p>
+        </div>
+        <div class="skill-lockup">
+          <h2><span>MY SKILLS</span></h2>
+          <div class="skill-unit">
+            <div class="skill-label">Comunication</div>
+            <div class="skill-icon sk-7"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Organization</div>
+            <div class="skill-icon sk-5"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Learning</div>
+            <div class="skill-icon sk-8"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Teaching</div>
+            <div class="skill-icon sk-6"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Planning</div>
+            <div class="skill-icon sk-7"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Visual Design</div>
+            <div class="skill-icon sk-6"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Ux Design</div>
+            <div class="skill-icon sk-7"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="skill-unit">
+            <div class="skill-label">Programing</div>
+            <div class="skill-icon sk-7"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-wrapper">
+        <h2 id="projects"><span>PROJECTS</span></h2>
+      </div>
+      <div class="clients-wrapper">
+        <h2 id="clients"><span>CLIENTS</span></h2>
+      </div>
+      <div id="contacts" class="social-wrapper">
+        <ul>
+          <li><a href="http://www.facebook.com.br/thewazig" target="_blank"> <span></span></a><a href="#"> <span></span></a><a href="#"><span></span></a><a href="#"><span></span></a><a href="#"><span></span></a></li>
+        </ul>
+        <h1>thewazig.wf@gmail.com</h1>
+      </div>
+      <div class="contact-wrapper">
+        <h2>LETS WORK TOGETHER</h2>
+        <form id="" method="" action="">
+          <label for="nome"> 
+            <h3>Name: </h3>
+            <input type="text" placeholder="Name" id="nome" name="name"/>
+          </label>
+          <label for="email"> 
+            <h3>Email: </h3>
+            <input type="text" placeholder="Email" id="email" name="email"/>
+          </label>
+          <label for="textarea"> 
+            <h3>Message:</h3>
+            <textarea id="textarea"></textarea>
+          </label>
+          <input id="button" type="submit" name="submit" value="OK"/>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-logo"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<g>
+	<path d="M0,26.988c0-1.354,0-2.707,0-4.061c0.051-0.216,0.125-0.43,0.15-0.649C1.366,11.53,8.939,3.014,19.506,0.546
+		c1.143-0.267,2.311-0.423,3.467-0.63c1.351,0,2.703,0,4.054,0c0.186,0.049,0.37,0.124,0.559,0.143
+		c10.559,1.062,19.395,8.86,21.751,19.222c0.274,1.204,0.444,2.431,0.663,3.647c0,1.354,0,2.707,0,4.061
+		c-0.051,0.216-0.128,0.429-0.15,0.647C48.81,38.05,41.004,46.959,30.827,49.308c-1.253,0.289-2.533,0.464-3.8,0.692
+		c-1.351,0-2.703,0-4.054,0c-0.186-0.049-0.37-0.124-0.559-0.143c-10.871-1.094-19.847-9.294-21.93-20.049
+		C0.302,28.873,0.16,27.929,0,26.988z M24.073,30.395c0.086,0.022,0.172,0.043,0.259,0.065c0.054,0.187,0.134,0.37,0.156,0.56
+		c0.235,1.957,0.428,3.919,0.701,5.87c0.147,1.049,0.3,2.129,0.678,3.107c0.449,1.161,1.448,1.417,2.563,0.88
+		c0.201-0.097,0.405-0.23,0.618-0.255c1.175-0.138,1.963-0.782,2.407-1.844c1.074-2.566,2.206-5.111,3.159-7.721
+		c0.993-2.719,1.963-5.465,2.646-8.272c0.602-2.474,1.546-4.935,1.171-7.579c-0.025-0.177,0.078-0.386,0.16-0.561
+		c0.694-1.471,0.485-3.035,0.46-4.574c-0.01-0.631-0.444-0.746-0.843-0.369c-0.545,0.517-1.118,1.082-1.434,1.744
+		c-0.398,0.831-0.819,1.724-0.459,2.742c0.108,0.307,0.02,0.724-0.082,1.059c-1.235,4.086-2.441,8.181-3.757,12.24
+		c-0.763,2.353-1.695,4.652-2.584,6.962c-0.19,0.492-0.524,0.929-0.882,1.545c-0.132-0.371-0.194-0.498-0.22-0.632
+		c-0.037-0.193-0.056-0.39-0.07-0.587c-0.396-5.705-0.139-11.362,1.105-16.965c0.316-1.422,0.442-2.893,0.565-4.35
+		c0.067-0.79-0.542-1.488-1.101-1.477c-1.362,0.026-3.096,1.251-3.577,2.557c-0.165,0.447-0.288,0.913-0.388,1.38
+		c-0.403,1.872-0.749,3.756-1.189,5.619c-1.15,4.873-2.907,9.516-5.357,13.887c-0.14,0.249-0.323,0.474-0.578,0.843
+		c-0.121-0.392-0.204-0.595-0.246-0.807c-0.913-4.565-1.535-9.158-1.38-13.833c0.042-1.265-0.052-2.535-0.094-3.802
+		c-0.016-0.477-0.131-0.96-0.084-1.429c0.143-1.428,0.216-2.882,0.554-4.267c0.439-1.796-0.271-3.175-1.205-4.553
+		c-0.542-0.8-1.306-1.048-2.204-0.898c-0.845,0.142-1.182,0.808-1.352,1.553c-0.181,0.796-0.316,1.602-0.452,2.408
+		c-0.604,3.592-1.008,7.203-0.906,10.852c0.027,0.965-0.042,2,1.012,2.605c0.176,0.101,0.275,0.426,0.314,0.663
+		c0.292,1.766,0.576,3.534,0.83,5.306c0.188,1.31,0.271,2.636,0.503,3.937c0.177,0.991,0.703,1.947,0.738,2.93
+		c0.068,1.877,0.723,3.563,1.37,5.257c0.387,1.014,1.129,1.267,2.022,0.632c0.681-0.485,1.291-1.184,1.696-1.919
+		c0.704-1.277,1.224-2.656,1.823-3.991C22.117,34.741,23.095,32.568,24.073,30.395z"/>
+</g>
+</svg>
+
+      </div>
+      <div class="footer-content">
+        <nav><a href="#about-me ">ABOUT ME</a><a href="#projects">PROJECTS</a><a href="#clients">CLIENTS</a><a href="#contacts">CONTACT</a></nav>
+        <p>COPIRIGHT 2015 © All right reserved to the owner of this site. BITCH</p>
+      </div>
+    </footer>
     <script src="/assets/js/jquery-2.1.4.min.js"></script>
     <script src="/assets/js/functions.js" type="text/javascript"></script>
   </body>

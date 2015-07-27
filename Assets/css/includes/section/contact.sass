@@ -1,0 +1,288 @@
+.social-wrapper
+	background: $accend
+	margin: 1em auto
+
+	ul	
+		padding-top: 7em 
+		text-align: center
+
+		li
+			list-style: none
+
+			a
+				background: rgba(255,255,255,0.1)
+				text-align: center
+				display: inline-block
+				text-decoration: none
+				color: white
+				width: 1em
+				height: 1em 
+				padding: 0.2em 0.5em 0.8em   
+				@extend %circle
+				border: 0.13em solid white
+				font: 
+					size: 1.5em
+					weight: 700
+
+				&:nth-child(1)
+					margin-right: 4em
+					&:before
+						content: "f"
+
+					span
+						margin: -1em  0.8em 
+						&:before
+							content: "acebook"
+			
+				&:nth-child(2)
+					margin-right: 4em
+					&:before
+						content: "t"
+					
+					span
+						margin: -1em  0.8em 
+						&:before
+							content: "witer"
+
+				&:nth-child(3)
+					margin-right: 4em
+					&:before
+						content: "in"
+
+					span
+						margin: -1em  0.85em 
+						&:before
+							content: "inkedin"
+
+				&:nth-child(4)
+					margin-right: 4em
+					&:before
+						content: "G"
+
+					span
+						margin: -1em  0.9em 
+						&:before
+							content: "ithub"
+
+				&:nth-child(5)
+					&:before
+						content: "Be"
+
+					span
+						margin: -1em  0.85em 
+						&:before
+							content: "ehance"
+
+				span
+					visibility: hidden
+					display: table
+					opacity: 0
+					margin: 1em 
+					@extend %transition
+					font:
+						size: 0.95em 
+
+				@extend %transition
+
+				&:hover:nth-child(1)
+					border: 0.13em solid rgba(255,255,255,0.5)
+					background: rgba(43,57,143,1)
+
+					box-shadow: 0.01em 0.01em 0.3em rgba(43,57,143,1)
+					-webkit-box-shadow: 0.01em 0.01em 0.3em rgba(43,57,143,1)
+					-moz-box-shadow: 0.01em 0.01em 0.3em rgba(43,57,143,1)
+					-o-box-shadow: 0.01em 0.01em 0.3em rgba(43,57,143,1)
+					-ms-box-shadow: 0.01em 0.01em 0.3em rgba(43,57,143,1)
+
+					span
+						width: 100%
+						margin: 0.5em 
+						opacity:1
+						margin: -1.45em  0.8em
+						visibility: visible
+
+
+					@media (-webkit-min-device-pixel-ratio: 0)
+						span							
+							margin: -1.36em  0.8em
+
+
+				&:hover:nth-child(2)
+					border: 0.13em solid rgba(255,255,255,0.5)
+					background: rgba(39,170,225,1)
+
+					box-shadow: 0.01em 0.01em 0.3em rgba(39,170,225,1)
+					-webkit-box-shadow: 0.01em 0.01em 0.3em rgba(39,170,225,1)
+					-moz-box-shadow: 0.01em 0.01em 0.3em rgba(39,170,225,1)
+					-o-box-shadow: 0.01em 0.01em 0.3em rgba(39,170,225,1)
+					-ms-box-shadow: 0.01em 0.01em 0.3em rgba(39,170,225,1)
+
+					span
+						width: 100%
+						margin: 0.5em 
+						opacity:1
+						margin: -1.45em  0.8em 
+						visibility: visible
+
+					@media (-webkit-min-device-pixel-ratio: 0)
+						span							
+							margin: -1.36em  0.8em
+
+				&:hover:nth-child(3)
+					&:before
+						content: "L"
+					border: 0.13em solid rgba(255,255,255,0.5)
+					background: rgba(18,91,149,1)
+
+					box-shadow: 0.01em 0.01em 0.3em rgba(18,91,149,1)
+					-webkit-box-shadow: 0.01em 0.01em 0.3em rgba(18,91,149,1)
+					-moz-box-shadow: 0.01em 0.01em 0.3em rgba(18,91,149,1)
+					-o-box-shadow: 0.01em 0.01em 0.3em rgba(18,91,149,1)
+					-ms-box-shadow: 0.01em 0.01em 0.3em rgba(18,91,149,1)
+
+					span
+						width: 100%
+						margin: 0.5em 
+						opacity:1
+						margin: -1.45em  0.85em 
+						visibility: visible
+
+					@media (-webkit-min-device-pixel-ratio: 0)
+						span							
+							margin: -1.36em  0.85em
+
+				&:hover:nth-child(4)
+					border: 0.13em solid rgba(255,255,255,0.5)
+					background: rgba(38,15,22,1)
+
+					box-shadow: 0.01em 0.01em 0.3em rgba(38,15,22,1)
+					-webkit-box-shadow: 0.01em 0.01em 0.3em rgba(38,15,22,1)
+					-moz-box-shadow: 0.01em 0.01em 0.3em rgba(38,15,22,1)
+					-o-box-shadow: 0.01em 0.01em 0.3em rgba(38,15,22,1)
+					-ms-box-shadow: 0.01em 0.01em 0.3em rgba(38,15,22,1)
+
+					span
+						width: 100%
+						margin: 0.5em 
+						opacity:1
+						margin: -1.45em  0.9em 
+						visibility: visible
+
+					@media (-webkit-min-device-pixel-ratio: 0)
+						span							
+							margin: -1.36em  0.9em
+
+				&:hover:nth-child(5)
+					&:before
+						content: "B"
+					border: 0.13em solid rgba(255,255,255,0.5)
+					background: rgba(28,117,188,1)
+
+					box-shadow: 0.01em 0.01em 0.3em rgba(28,117,188,1)
+					-webkit-box-shadow: 0.01em 0.01em 0.3em rgba(28,117,188,1)
+					-moz-box-shadow: 0.01em 0.01em 0.3em rgba(28,117,188,1)
+					-o-box-shadow: 0.01em 0.01em 0.3em rgba(28,117,188,1)
+					-ms-box-shadow: 0.01em 0.01em 0.3em rgba(28,117,188,1)
+
+					span
+						width: 100%
+						margin: 0.5em 
+						opacity:1
+						margin: -1.45em  0.85em 
+						visibility: visible
+
+					@media (-webkit-min-device-pixel-ratio: 0)
+						span							
+							margin: -1.36em  0.85em
+
+
+	h1
+		text-align: center
+		padding: 1.2em 0 1.8em  
+		color: white
+
+		font:
+			family: Baskerville
+			size: 4em
+			weight: 700 
+
+
+.contact-wrapper
+	margin: 0 auto
+
+	h2
+		margin: 3em auto 2em
+		text-align: center
+		color: $accend
+
+		span
+			display: inline-block
+
+	form
+		text-align: center
+		margin: 0 auto 6em
+		max-width: 30em 
+
+		label
+			margin: 1em auto
+			display: block
+			width: 100%
+
+			h3	
+				text-align: left
+				color: $accend
+				font:
+					weight: 400
+				margin-bottom: 0.4em 
+
+			input, textarea
+				width: 100%
+				border: 0.1em solid $accend
+				@extend %transition
+				color: rgba(0,0,0,0.8)
+
+				&:focus
+					
+					box-shadow: inset 0.01em 0.01em 0.5em $accend
+					-webkit-box-shadow: inset 0.01em 0.01em 0.8em $accend
+					-moz-box-shadow: inset 0.01em 0.01em 0.5em $accend
+					-o-box-shadow: inset 0.01em 0.01em 0.5em $accend
+					-ms-box-shadow: inset 0.01em 0.01em 0.5em $accend
+
+
+			input
+				-webkit-appearance: none
+				height: 3em 
+				padding: 0 1em
+
+			textarea			
+				-webkit-appearance: none
+				padding: 1em 1em 2.5em   
+				height: 15em
+
+		input#button
+			background: white
+			border: 0.1em solid $accend
+			width: 4em 
+			height: 4em
+			@extend %circle
+			color: $dark-accend
+			font:
+				size: 1em 
+				weight: 700
+
+			@extend %transition
+
+			&:hover
+				cursor: pointer
+				border: 0.1em solid $dark-accend
+
+				box-shadow: inset 0.01em 0.01em 0.5em $accend
+				-webkit-box-shadow: inset 0.01em 0.01em 0.5em $accend
+				-moz-box-shadow: inset 0.01em 0.01em 0.5em $accend
+				-o-box-shadow: inset 0.01em 0.01em 0.5em $accend
+				-ms-box-shadow: inset 0.01em 0.01em 0.5em $accend
+
+
+
+

@@ -1,0 +1,101 @@
+.about
+	border-left: 0.4em double $accend
+	border-right: 0.4em double $accend
+
+
+	clear: both
+	display: table
+	width: 80%
+	margin: 4em  auto
+	@extend %transition
+	background: white
+
+	h2
+		clear: both
+		margin: 2em auto 2em 
+		padding-top: 1em 
+		color: $accend
+		text-align: center
+		@extend %transition
+
+		span
+			display: inline-block
+
+	.photo-wrapper
+		margin: 0 auto
+		width: 15em 
+		height: 15em
+		border: 0.1em double $dark-accend
+
+		@extend %circle
+
+		.photo
+			background: url(../img/men-at-work.png) center center
+			background-repeat: no-repeat
+			width: 15em 
+			height: 15em
+
+			@extend %circle
+			@extend %transition
+
+	.description
+		background: transparent url(../img/l.png)
+		background-position: left top 
+		background-repeat: no-repeat
+		background-size: 6em
+
+
+		font:
+			size: 1.1em 
+			family: Vollkorn
+		
+		margin: 1em auto 2em 
+		max-width: 40em 
+		padding: 2em 2em
+		text-align: justify
+		color: rgba(0,0,0,0.8)
+
+	.skill-lockup
+		width: 40em
+		margin: 0 auto 3em 
+		text-align: center
+		clear: both
+		color: rgba(0,0,0,0.7)
+		display: table
+
+		@extend %transition
+
+		h2
+			margin: 1em auto  
+
+		.skill-unit
+			float: left
+			width: 20em
+			margin: 0.4em auto
+
+
+			.skill-icon
+				margin: 0.3em auto
+
+				span
+					margin-left:0.2em 
+					display: inline-block
+					width: 0.7em
+					height: 0.7em
+					background: $balls
+					@extend %circle
+					border: 0.1em double black
+
+					box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white
+					-webkit-box-shadow: inset -0.05em -0.05em 0.35em black, inset 0.1em 0.1em 0.4em white
+					-moz-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white
+					-o-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white
+					-ms-box-shadow: inset -0.06em -0.06em 0.2em black, inset 0.1em 0.1em 0.3em white
+
+				@for $i from 1 through 10
+					&.sk-#{$i} span:nth-child(n+#{$i+1})
+						background: white
+
+
+
+
